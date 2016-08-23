@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1.0">
+	<title>Schedule Generator</title>
+	<link href="style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="jquery.color-2.1.2.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Schedule Generator</h1>
+		<div class="gray">
+			<div class="instructions">
+				<h2>Instructions</h2>
+				<p>Fill in the names and locations of your classes below. Leave blank for a free period. Locations are not required.</p>
+				<p>Use the buttons to automatically repeat classes that meet four or two times per cycle. The cells that will be changed will be highlighted.</p>
+				<p>Pressing the download button in Chrome or Firefox will download the .csv file automatically. In Safari, you will have to &#8984;S the page that opens and select &ldquo;Page Source&rdquo; for the format.</p>
+				<p>For uploading instructions, <a href="instructions.html">click here</a>.</p>
+			</div>
+		</div>
+	</header>
+	<form>
+		<div class="subHeader">
+			<h2>Semester 1</h2>
+			<div>
+				<button type="button" id="repeat41">4 per cycle</button>
+				<button type="button" id="repeat21">2 per cycle</button>
+				<button type="button" id="copy1">Copy S2</button>
+				<button type="reset" id="clear1">Clear</button>
+			</div>
+		</div>
+		<div class="table">
+			<table>
+				<tr>
+					<th></th>
+					<th class="day">Day 1</th>
+					<th class="day">Day 2</th>
+					<th class="day">Day 3</th>
+					<th class="day">Day 4</th>
+					<th class="day">Day 5</th>
+					<th class="day">Day 6</th>
+					<th class="day">Day 7</th>
+					<th class="day">Day 8</th>
+				</tr>
+				<tr class="class">
+					<th>Class 1</th>
+					<td><div class="fade"><input type="text" class="s1" id="cA10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cE10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cB11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cF11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cC12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cG12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cD13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cH13"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s1" id="lA10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lE10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lB11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lF11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lC12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lG12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lD13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lH13"></div></td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>MFA</td>
+					<td>Advisory</td>
+					<td>Class Meeting</td>
+					<td>MFW</td>
+					<td>MFA</td>
+					<td>Advisory</td>
+					<td>MFW</td>
+					<td rowspan="2">Assembly</td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>Collab</td>
+					<td>Clubs</td>
+					<td>Collab</td>
+					<td>Collab</td>
+					<td>Clubs</td>
+					<td>Collab</td>
+					<td>Collab</td>
+				
+				</tr>
+				<tr class="class">
+					<th>Class 2</th>
+					<td><div class="fade"><input type="text" class="s1" id="cB10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cF10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cC11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cG11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cD12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cH12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cA13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cE13"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s1" id="lB10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lF10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lC11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lG11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lD12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lH12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lA13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lE13"></div></td>
+				</tr>
+				<tr class="class">
+					<th>Class 3</th>
+					<td><div class="fade"><input type="text" class="s1" id="cC10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cG10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cD11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cH11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cA12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cE12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cB13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cF13"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s1" id="lC10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lG10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lD11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lH11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lA12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lE12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lB13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lF13"></div></td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+				</tr>
+				<tr class="class">
+					<th>Class 4</th>
+					<td><div class="fade"><input type="text" class="s1" id="cD10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cH10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cA11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cE11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cB12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cF12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cC13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="cG13"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s1" id="lD10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lH10"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lA11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lE11"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lB12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lF12"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lC13"></div></td>
+					<td><div class="fade"><input type="text" class="s1" id="lG13"></div></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<form>
+		<div class="subHeader">
+			<h2>Semester 2</h2>
+			<div>
+				<button type="button" id="repeat42">4 per cycle</button>
+				<button type="button" id="repeat22">2 per cycle</button>
+				<button type="button" id="copy2">Copy S1</button>
+				<button type="reset" id="clear2">Clear</button>
+			</div>
+		</div>
+		<div class="table">
+			<table>
+				<tr>
+					<th></th>
+					<th class="day">Day 1</th>
+					<th class="day">Day 2</th>
+					<th class="day">Day 3</th>
+					<th class="day">Day 4</th>
+					<th class="day">Day 5</th>
+					<th class="day">Day 6</th>
+					<th class="day">Day 7</th>
+					<th class="day">Day 8</th>
+				</tr>
+				<tr class="class">
+					<th>Class 1</th>
+					<td><div class="fade"><input type="text" class="s2" id="cA20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cE20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cB21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cF21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cC22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cG22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cD23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cH23"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s2" id="lA20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lE20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lB21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lF21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lC22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lG22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lD23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lH23"></div></td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>MFA</td>
+					<td>Advisory</td>
+					<td>Class Meeting</td>
+					<td>MFW</td>
+					<td>MFA</td>
+					<td>Advisory</td>
+					<td>MFW</td>
+					<td rowspan="2">Assembly</td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>Collab</td>
+					<td>Clubs</td>
+					<td>Collab</td>
+					<td>Collab</td>
+					<td>Clubs</td>
+					<td>Collab</td>
+					<td>Collab</td>
+				
+				</tr>
+				<tr class="class">
+					<th>Class 2</th>
+					<td><div class="fade"><input type="text" class="s2" id="cB20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cF20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cC21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cG21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cD22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cH22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cA23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cE23"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s2" id="lB20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lF20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lC21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lG21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lD22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lH22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lA23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lE23"></div></td>
+				</tr>
+				<tr class="class">
+					<th>Class 3</th>
+					<td><div class="fade"><input type="text" class="s2" id="cC20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cG20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cD21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cH21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cA22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cE22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cB23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cF23"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s2" id="lC20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lG20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lD21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lH21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lA22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lE22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lB23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lF23"></div></td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+					<td>Lunch</td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+					<td>Flex</td>
+				</tr>
+				<tr class="class">
+					<th>Class 4</th>
+					<td><div class="fade"><input type="text" class="s2" id="cD20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cH20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cA21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cE21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cB22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cF22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cC23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="cG23"></div></td>
+				</tr>
+				<tr class="location">
+					<th>Location</th>
+					<td><div class="fade"><input type="text" class="s2" id="lD20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lH20"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lA21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lE21"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lB22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lF22"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lC23"></div></td>
+					<td><div class="fade"><input type="text" class="s2" id="lG23"></div></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<button type="button" class="submit" onclick="download()">Download (.csv)</button>
+</body>
+</html>
