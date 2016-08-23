@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Schedule Generator</title>
+	<title>Uploading Instructions</title>
 	<link href="style.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
 </head>
@@ -11,44 +11,23 @@
 		<h1>Uploading Instructions</h1>
 		<div class="gray">
 			<div class="instructions">
-				<div class="step">
-					<h2>Step 1</h2>
-					<img src="images/step1.png" alt="Step 1">
-					<p>Go to <a href="https://calendar.google.com/calendar">calendar.google.com</a> and log in.</p>
-				</div>
-				<div class="step">
-					<h2>Step 2</h2>
-					<img src="images/step2.png" alt="Step 2">
-					<p>Create a new calendar to upload your schedule to.</p>
-				</div>
-				<div class="step">
-					<h2>Step 3</h2>
-					<img src="images/step3.png" alt="Step 3">
-					<p>Go to your calendar settings.</p>
-				</div>
-				<div class="step">
-					<h2>Step 4</h2>
-					<img src="images/step4.png" alt="Step 4">
-					<p>Select &ldquo;Calenders&rdquo; at the top.</p>
-				</div>
-				<div class="step">
-					<h2>Step 5</h2>
-					<img src="images/step5.png" alt="Step 5">
-					<p>Click &ldquo;Import calendar&rdquo; at the bottom.</p>
-				</div>
-				<div class="step">
-					<h2>Step 6</h2>
-					<img src="images/step6.png" alt="Step 6">
-					<p>Choose your schedule file and press &ldquo;Import&rdquo;.</p>
-				</div>
-				<div class="step last">
-					<h2>Step 7</h2>
-					<p>From here, you can log in to your Google account on an iPad and view your schedule in the Calendar app.</p>
-				</div>
-				<div class="back">
-					<a href="."><button>Back to Generator</button></a>
-				</div>
+				<ol>
+					<li>Open <a href="https://calendar.google.com/" target="_blank">Google Calendar</a> on a computer.</li>
+					<li><a href="https://support.google.com/calendar/answer/37095" target="_blank">Create a new calendar</a> to add your schedule to.</li>
+					<li>In the top right, click <img src="gear.png" alt="Settings"><strong> > Settings</strong>.</li>
+					<li>Open the <strong>Calendars</strong> tab.</li>
+					<li>Click <strong>Import calendars</strong> between the "My calendars" and "Other Calendars" sections.</li>
+					<li>Click <strong>Choose File</strong> and select the file you exported. The file should end in "csv"</li>
+					<li>Choose the calendar you created earlier to add the imported events to.
+						<p><strong>Warning:</strong> By default, events will be imported into your primary calendar, making them difficult to delete or change later.<p>
+					</li>
+					<li>Click <strong>Import</strong>.</li>
+				</ol>
+				<p>Instructions adapted from <a href="https://support.google.com/calendar/answer/37118" target="_blank">support.google.com</a></p>
 			</div>
+		</div>
+		<div class="back">
+			<a href="."><button>Back to Generator</button></a>
 		</div>
 	</header>
 </body>

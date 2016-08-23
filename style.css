@@ -34,7 +34,7 @@ header {
 
 
 .gray {
-	/*margin-bottom: 2rem;*/
+
 }
 
 h1, h2, h3, th {
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-	margin: 0 0 .2rem;
+	margin-bottom: -.4rem;
 	font-size: 2rem;
 }
 
@@ -60,14 +60,18 @@ h3 {
 	font-size: 1.6rem;
 }
 
-.instructions>p {
+.instructions>p, li {
 	line-height: 1.5rem;
 	letter-spacing: -.02rem;
 	text-align: left;
 }
 
-p + p {
-	margin: .9rem 0 0;
+p, li {
+	margin-top: .9rem;
+}
+
+ol {
+	margin-left: 1.25rem;
 }
 
 .subHeader {
@@ -152,8 +156,8 @@ button.submit {
 
 
 img {
-	/*max-width: 100rem;*/
-	margin-top: .65rem;
+	height: 1.5rem;
+	vertical-align: -.39rem;
 }
 
 .step p {
@@ -170,7 +174,7 @@ img {
 }
 
 .back {
-	margin-bottom: 1.6rem;
+	margin: .8rem 0 1.2rem;
 }
 
 .back button {
