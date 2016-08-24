@@ -31,12 +31,6 @@ header {
 	width: 85%;
 }
 
-
-
-.gray {
-
-}
-
 h1, h2, h3, th {
 	font-weight: 500;
 }
@@ -179,4 +173,12 @@ img {
 
 .back button {
 	font-size: 1.25rem;
+}
+
+a, a:visited {
+	color: #555;
+}
+
+a:hover {
+	color: #222;
 }
