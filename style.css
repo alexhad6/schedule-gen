@@ -12,6 +12,10 @@ body, input {
 	letter-spacing: -.015rem;
 }
 
+code {
+	font-size: 1.2rem;
+}
+
 header, .instructions, .step, table {
 	display: inline-block;
 }
@@ -62,6 +66,7 @@ h3 {
 
 p, li {
 	margin-top: .9rem;
+	word-wrap: break-word;
 }
 
 ol {
