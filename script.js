@@ -72,4 +72,8 @@ $(document).ready(function(){
 	$('#clear1, #clear2, #copy1, #copy2').click(function(){
 		rc={}, rl={}, rc1={}, rc2={}, rl1={}, rl2={};
 	});
+	$('#print1, #print2').click(function(){
+		let sem = $(this).attr('id').charAt(5);
+		print(sem);
+	});
 });

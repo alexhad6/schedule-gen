@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="jquery.color-2.1.2.min.js"></script>
+	<script src="jquery.printElement.min.js"></script>
 	<script src="script.js"></script>
 	<script src="download.js"></script>
 </head>
@@ -17,8 +18,8 @@
 			<div class="instructions">
 				<h2>Instructions</h2>
 				<p>Fill in the names and locations of your classes below. Leave blank for a free period. Locations are not required.</p>
-				<p>Use the buttons to automatically repeat classes that meet two or four times per cycle.</p>
-				<p>Pressing the download button in Chrome or Firefox will download the <code>.csv</code> file automatically. In Safari, you will have to &#8984;S the page that opens and select "Page Source" as the format.</p>
+				<p>Use the buttons to automatically repeat classes that meet two or four times per cycle. You can also print your schedule.</p>
+				<p>Pressing the download button in Chrome or Firefox will download the <code>.csv</code> file automatically. In Safari, &#8984;S the page that opens and select "Page Source" as the format.</p>
 				<p>For uploading instructions, <a href="instructions.html">click here</a>.</p>
 				<p>Community periods will not be added automatically. For instructions on how to add community periods, <a href="community-periods.html">click here</a>.</p>
 			</div>
@@ -31,8 +32,8 @@
 				<button type="button" id="repeat41">4 per cycle</button>
 				<button type="button" id="repeat21">2 per cycle</button>
 				<button type="button" id="copy1">Copy S2</button>
-				<button type="reset" id="clear1">Clear</button>
 				<button type="button" id="print1">Print</button>
+				<button type="reset" id="clear1">Clear</button>
 			</div>
 		</div>
 		<div class="table">
@@ -190,6 +191,7 @@
 				<button type="button" id="repeat42">4 per cycle</button>
 				<button type="button" id="repeat22">2 per cycle</button>
 				<button type="button" id="copy2">Copy S1</button>
+				<button type="button" id="print2">Print</button>
 				<button type="reset" id="clear2">Clear</button>
 			</div>
 		</div>
